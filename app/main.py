@@ -8,8 +8,8 @@ app = flask(__name__)
 
 
 @app.route('/<random_string>')
-def return_backwards_string(random_string);
-  # comment
+def return_backwards_string(random_string)
+
   return "".join(reversed(random_string))
 
 
