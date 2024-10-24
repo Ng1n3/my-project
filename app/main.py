@@ -4,7 +4,7 @@ import os
 
 load_dotenv()
 
-app = flask(__name__)
+app = Flask(__name__)
 
 
 @app.route('/<random_string>')
