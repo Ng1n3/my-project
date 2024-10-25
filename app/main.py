@@ -4,16 +4,16 @@ import os
 
 load_dotenv() # take environment variables from .env.
 
-app = flask(__name__)
+app = Flask(__name__)
 
 
 @app.route('/<random_string>')
-def return_backwards_string(random_string);
+def return_backwards_string(random_string):
   return "".join(reversed(random_string))
 
 
 @app.route('/get-mode')
-def get_mode();
+def get_mode():
   return os.environ.get("MODE")
 
 
